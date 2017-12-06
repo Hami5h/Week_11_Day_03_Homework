@@ -33,7 +33,12 @@ var arrayTasks = {
 	},
 
 	removeAndClone: function (arr, valueToRemove) {
-
+		// let result = arr.filter(number => number !== valueToRemove);
+		// return result;
+		let filtered = arr.filter(function(item) {
+			return item !== valueToRemove;
+		});
+		return filtered;
 	},
 
 	// findIndexesOf: function (arr, itemToFind) {
