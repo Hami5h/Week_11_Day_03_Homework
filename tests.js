@@ -20,17 +20,17 @@ describe('Array tasks', function () {
 		assert.deepStrictEqual(arrayTasks.square(arr), [1, 4, 9, 16, 25])
 	})
 
-	xit('should calculate the sum of all values in an array', function () {
+	it('should calculate the sum of all values in an array', function () {
 		var arr = [1, 2, 3, 4, 5]
 		assert.strictEqual(arrayTasks.sum(arr), 15)
 	})
 
-	xit('should find duplicate values in an array, returning a new array of the duplicates', function () {
+	it('should find duplicate values in an array, returning a new array of the duplicates', function () {
 		var arr = [1, 2, 3, 4, 4, 5, 5, 5]
 		assert.deepStrictEqual(arrayTasks.findDuplicates(arr), [4, 5])
 	})
 
-	xit('should remove all instances of a value from an array, returning a new array', function () {
+	it('should remove all instances of a value from an array, returning a new array', function () {
 		var arr = [1, 2, 3, 1, 4, 5, 1]
 		assert.deepStrictEqual(arrayTasks.removeAndClone(arr, 1), [2, 3, 4, 5])
 	})

@@ -15,17 +15,26 @@ var arrayTasks = {
 		return NewArr;
 	},
 
-	// sum: function (arr) {
+	sum: function (arr) {
+			const total = arr.reduce((sum, item) => sum + item);
+			return total;
+	},
 
-	// },
+	findDuplicates: function (arr) {
+		let duplicates = [];
+		arr.forEach(function(number, index) {
+			if (arr.indexOf(number, index + 1) > -1) {
+				if (duplicates.indexOf(number) === -1) {
+					duplicates.push(number);
+				}
+			}
+		});
+		return duplicates;
+	},
 
-	// findDuplicates: function (arr) {
+	removeAndClone: function (arr, valueToRemove) {
 
-	// },
-
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
