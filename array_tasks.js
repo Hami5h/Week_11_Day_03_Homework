@@ -41,9 +41,16 @@ var arrayTasks = {
 		return filtered;
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
+	findIndexesOf: function (arr, itemToFind) {
+		let indexArray = [];
+		arr.filter(function(item, index){
+			if(item == itemToFind) {
+				indexArray.push(index);
+			}
+		});
+		return indexArray;
 
-	// },
+	},
 
 	// sumOfAllEvenNumbersSquared: function (arr) {
 
