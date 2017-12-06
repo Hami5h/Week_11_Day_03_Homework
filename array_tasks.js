@@ -10,9 +10,10 @@ var arrayTasks = {
 		return arr;
 	},
 
-	// square: function (arr) {
-
-	// },
+	square: function (arr) {
+		const NewArr = arr.map(value => value ** 2);
+		return NewArr;
+	},
 
 	// sum: function (arr) {
 
